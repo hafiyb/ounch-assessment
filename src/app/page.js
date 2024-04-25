@@ -6,12 +6,8 @@ const fetchData = async (page = 0) => {
   let connection;
   try {
     connection = await mysql.createConnection({
-      //host: 'databases.000webhost.com',
-      //database: 'id22085626_sample_db',
-      //user: 'id22085626_admin',
-      //password: 'Mb45!b162'
-      host: 'localhost',
-      user: 'root',
+      host: process.env.DB_HOST,
+      user: process.env.DB_USER,
       database: 'sample_db',
     });
 
