@@ -16,21 +16,27 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Ounch Frontend assessment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+MySQL database for this project is on localhost, on user 'root' with no password.
 
-## Learn More
+A MySQL database named `sample_db` with a table named `items` having columns `id` (INT, AUTO_INCREMENT), `name` (VARCHAR), and `description` (TEXT) was created and table `items` was populated with sample data
 
-To learn more about Next.js, take a look at the following resources:
+## Screenshots
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![1](https://github.com/hafiyb/ounch-assessment/assets/90592549/4a88ac4f-0d69-41bd-af4e-22a712f9b2e0)
+Fetched and displayed 10 data from table `items` in database
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![2](https://github.com/hafiyb/ounch-assessment/assets/90592549/60b489ea-d366-4350-a4e3-a25760f47d9a)
+Page 5 of fetched data showing items 41-44 from table `items` in database
 
-## Deploy on Vercel
+![3](https://github.com/hafiyb/ounch-assessment/assets/90592549/cbfc26f7-27b1-40b5-b43f-adfcc651af4c)
+Demonstration of width responsivess of page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![4](https://github.com/hafiyb/ounch-assessment/assets/90592549/e4e9c146-bab3-4fd7-a839-c9b61d6fb163)
+Handling in case of fetched data being empty (fetching error)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![5](https://github.com/hafiyb/ounch-assessment/assets/90592549/16a0fbbd-e53f-4884-9124-9d2ae92103c3)
+Temporary Next.js app router error handling in case of unhandled and unexpected errors
+
+
